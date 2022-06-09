@@ -4,7 +4,6 @@ ob_start();
 if(!isset($_SESSION['cart'])){
     $_SESSION['cart'] = array();
 }
-
 // session_destroy();
 
 ?>
@@ -66,10 +65,10 @@ if(mysqli_num_rows($result)>0){
                 
                 $_SESSION['location']='index.php';
                 ?>
-            <a href="remove_cart.php?id=<?php echo $row['product_id'];?>" class="btn btn-danger">remove</a>
+            <a href="functions/remove_cart.php?id=<?php echo $row['product_id'];?>" class="btn btn-danger">remove</a>
         <?php
             }else{?>
-            <a href="add_cart.php?id=<?php echo $row['product_id'];?>" class="btn btn-primary">Add to Cart</a>
+            <a href="functions/add_cart.php?id=<?php echo $row['product_id'];?>" class="btn btn-primary">Add to Cart</a>
         <?php }?>
         </div>
     </div>

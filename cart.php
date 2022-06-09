@@ -48,7 +48,7 @@ foreach($_SESSION['cart'] as $product_id){
         <div class="card-body">
             <h5 class="card-title"><?php echo $row['product_name'];?></h5>
             <p class="card-text">$ <?php echo $row['product_price'];?></p>
-            <a href="remove_cart.php?id=<?php echo $row['product_id'];?>" class="btn btn-danger">Remove</a>
+            <a href="functions/remove_cart.php?id=<?php echo $row['product_id'];?>" class="btn btn-danger">Remove</a>
         </div>
     </div>
 

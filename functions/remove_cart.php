@@ -11,4 +11,4 @@ if(in_array($_GET['id'], $_SESSION['cart'])){
 
 }
 $location = $_SESSION['location'];
-header('location:' . $location);
+header('location:../' . $location);
